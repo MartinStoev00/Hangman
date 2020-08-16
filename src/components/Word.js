@@ -1,4 +1,5 @@
 import React from 'react';
+import Syn from './Syn'
 
 const Word = ({ selectedWord, correctLetters }) => {
 
@@ -11,6 +12,7 @@ const Word = ({ selectedWord, correctLetters }) => {
           </span>
         )
       })}
+      <Syn selectedWord={selectedWord} />
     </div>
   )
 }
